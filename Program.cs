@@ -7,13 +7,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
   {
     static void Main(string[] args)
     {
-      string characterName = "Jonas";
-      int characterAge = 35;
+      // Strings
+      string sentence = "This is some text";
+      // Characters
+      char grade = 'A';
+      // Integers
+      int integerNumber = 24;
+      // Floats
+      float floatNumber = 0.5F;
+      decimal decimalFloat = 0.10M;
+      // Booleans
+      bool isGreater = true;
 
-      Console.WriteLine("There was a guy named " + characterName);
-      Console.WriteLine("He was " + characterAge + " years old");
-      Console.WriteLine("He really liked the name " + characterName);
-      Console.WriteLine("But didn't like being " + characterAge);
+      Console.WriteLine(sentence);
+      Console.WriteLine(grade);
+      Console.WriteLine(integerNumber);
+      Console.WriteLine(floatNumber);
+      Console.WriteLine(decimalFloat);
+      Console.WriteLine(isGreater);
     }
   }
 }
