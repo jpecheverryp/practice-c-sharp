@@ -7,10 +7,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("   /|");
-      Console.WriteLine("  / |");
-      Console.WriteLine(" /  |");
-      Console.WriteLine("/___|");
+      string characterName = "Jonas";
+      int characterAge = 35;
+
+      Console.WriteLine("There was a guy named " + characterName);
+      Console.WriteLine("He was " + characterAge + " years old");
+      Console.WriteLine("He really liked the name " + characterName);
+      Console.WriteLine("But didn't like being " + characterAge);
     }
   }
 }
