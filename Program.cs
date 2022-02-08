@@ -7,24 +7,34 @@ namespace MyApp // Note: actual namespace depends on the project name.
   {
     static void Main(string[] args)
     {
-      // Strings
-      string sentence = "This is some text";
-      // Characters
-      char grade = 'A';
-      // Integers
-      int integerNumber = 24;
-      // Floats
-      float floatNumber = 0.5F;
-      decimal decimalFloat = 0.10M;
-      // Booleans
-      bool isGreater = true;
-
+      // Line jump
+      Console.WriteLine("Giraffe\nAcademy");
+      // Escaping double quotes
+      Console.WriteLine("Giraffe\"Academy");
+      // Print a variable content
+      string sentence = "Giraffe Academy";
       Console.WriteLine(sentence);
-      Console.WriteLine(grade);
-      Console.WriteLine(integerNumber);
-      Console.WriteLine(floatNumber);
-      Console.WriteLine(decimalFloat);
-      Console.WriteLine(isGreater);
+      // Concatenation
+      Console.WriteLine("Concatenation is " + "cool");
+      // Print a string length
+      Console.WriteLine(sentence.Length);
+      // uppercase method
+      Console.WriteLine(sentence.ToUpper());
+      // Contains method
+      Console.WriteLine(sentence.Contains("Academy"));
+      Console.WriteLine(sentence.Contains("Academies"));
+      // First character
+      Console.WriteLine(sentence[0]);
+      // Index Of
+      Console.WriteLine(sentence.IndexOf("Academy"));
+      Console.WriteLine(sentence.IndexOf("f"));
+      Console.WriteLine(sentence.IndexOf("z"));
+      // Substring
+      Console.WriteLine(sentence.Substring(8, 3));
+
+      Console.ReadLine();
+
+
     }
   }
 }
